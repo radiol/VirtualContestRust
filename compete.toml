@@ -128,19 +128,8 @@ dev-dependencies = '''
 "./template-cargo-lock.toml" = "Cargo.lock"
 
 [new]
-kind = "oj-api"
-# Platform
-#
-# - atcoder
-# - codeforces
-# - yukicoder
 platform = "atcoder"
-# Path (Liquid template)
-#
-# Variables:
-#
-# - `contest`:      Contest ID. **May be nil**
-# - `package_name`: Package name
+kind = "oj-api"
 url = "https://kenkoooo.com/atcoder/#/contest/show/{{ id }}"
 path = "./{{ contest }}"
 
@@ -184,4 +173,3 @@ language_id = "5054"
 #kind = "command"
 #args = ["cargo", "equip", "--exclude-atcoder-crates", "--resolve-cfgs", "--remove", "docs", "--minify", "libs", "--rustfmt", "--check", "--bin", "{{ bin_name }}"]
 #language_id = "4050"
-
